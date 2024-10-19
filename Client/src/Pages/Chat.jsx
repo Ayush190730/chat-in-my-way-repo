@@ -4,7 +4,7 @@ import { ChatContext } from "../Context/ChatContext";
 import { AuthContext } from "../Context/AuthContext";
 import UserChat from "../Components/chat/UserChat";
 import PotentialChats from "../Components/chat/PotentialChats";
-import ChatBox from "../Components/chat/chatBox";
+import ChatBox from "../Components/chat/ChatBox";
 
 const Chat = () =>{
           

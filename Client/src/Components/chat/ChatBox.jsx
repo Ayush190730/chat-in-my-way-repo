@@ -6,7 +6,7 @@ import { Stack } from "react-bootstrap";
 import moment from "moment";
 import InputEmoji from "react-input-emoji"
 
-const ChatBox = () => {
+export const ChatBox = () => {
   const { user } = useContext(AuthContext)
   const { currentChat, messages, isMessagesLoading, sendTextMessage } = useContext(ChatContext)
   const { recipientUser } = useFetchRecipientUser(currentChat, user);
