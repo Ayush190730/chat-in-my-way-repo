@@ -26,7 +26,7 @@ app.use('/api/users',userRoute);
 app.use('/api/chats',chatRoute);
 app.use('/api/message',messageRoute);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5001;
 const uri = process.env.ATLAS_URL;
 
 //CRUD Operations

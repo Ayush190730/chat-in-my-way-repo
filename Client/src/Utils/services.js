@@ -1,4 +1,4 @@
-export const baseUrl = `${import.meta.env.VITE_SOCKET_URL}/api`
+export const baseUrl = "http://localhost:5001/api"
 
 export const postRequest = async (url, body) => {
          const response =   await fetch(url,
