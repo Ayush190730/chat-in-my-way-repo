@@ -22,8 +22,6 @@ const Notifications = () => {
       })
    })
 
-   console.log("un", unreadNotifications);
-   console.log("mn", modifiedNotifications);
 
    return (
 
