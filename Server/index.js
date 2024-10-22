@@ -15,6 +15,12 @@ const app = express();
 //Middlewares
 
 app.use(express.json());
+app.use((req, res, next) => {
+    res.header('Access-Control-Allow-Origin', 'https://chat-in-my-way-repo.vercel.app');
+    res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
+    next();
+  });
+  
 app.use(cors({
       origin: process.env.CLIENT_URL,
       methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
