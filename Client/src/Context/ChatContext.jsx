@@ -20,7 +20,7 @@ export const ChatContextProvider = ({ children, user }) => {
   const [notifications, setNotifications] = useState([]);
   const [allUsers, setAllUsers] = useState([]);
 
-console.log("notifications", notifications)
+
 
   useEffect(()=>{
     const newSocket = io('https://chat-in-my-way-repo-5.onrender.com');
