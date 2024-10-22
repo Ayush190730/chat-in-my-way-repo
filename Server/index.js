@@ -21,10 +21,7 @@ app.use(cors({
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     credentials: true, // If you need to send cookies or auth headers
 }));
-app.use((req, res, next) => {
-    res.header('Access-Control-Allow-Origin', '*');
- 
-  });
+
 
 //Routes
 app.use('/api/users',userRoute);
