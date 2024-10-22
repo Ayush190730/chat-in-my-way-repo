@@ -47,7 +47,7 @@ mongoose
           console.log("Error", error.message);
 })
 
-const io = new Server(expressServer,{ cors: process.env.CLIENT_URL });
+const io = new Server(expressServer,{ cors: 'https://chat-in-my-way-repo.vercel.app' });
 
 let onlineUsers = [];
 

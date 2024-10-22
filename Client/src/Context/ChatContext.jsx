@@ -23,7 +23,7 @@ export const ChatContextProvider = ({ children, user }) => {
 console.log("notifications", notifications)
 
   useEffect(()=>{
-    const newSocket = io('http://localhost:5001');
+    const newSocket = io('https://chat-in-my-way-repo-5.onrender.com');
     setSocket(newSocket);
 
     return ()=>{
