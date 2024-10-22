@@ -1,14 +1,14 @@
-// export const baseUrl = "http://localhost:5001/api"
-export const baseUrl = "https://chat-in-my-way-repo-5.onrender.com/api";
+export const baseUrl = "http://localhost:5001/api"
+// export const baseUrl = "https://chat-in-my-way-repo-5.onrender.com/api";
 
 export const postRequest = async (url, body) => {
          const response =   await fetch(url,
               {
-                    mode: 'no-cors',
                     method: 'POST',
                     headers: {
                               "Content-Type" : "application/json"
-                    }
+                    },
+                    body: JSON.stringify(body)
 });
 
             const data = await response.json();
@@ -30,9 +30,7 @@ export const postRequest = async (url, body) => {
 
 
 export const getRequest = async(url) => {
-       const response = await fetch(url,{
-        mode: 'no-cors'
-       });
+       const response = await fetch(url);
 
        const data = await response.json();
 
