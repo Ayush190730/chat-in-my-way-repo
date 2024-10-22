@@ -16,11 +16,11 @@ const app = express();
 
 app.use(express.json());
 
-app.use(cors({
-    origin: process.env.CLIENT_URL,
-    methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
-    credentials: true, // If you need to send cookies or auth headers
-}));
+// app.use(cors({
+//     origin: process.env.CLIENT_URL,
+//     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+//     credentials: true, // If you need to send cookies or auth headers
+// }));
 
 
 //Routes
