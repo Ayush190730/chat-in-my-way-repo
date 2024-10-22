@@ -38,7 +38,7 @@ const Login = () =>{
                                         <p>{loginError?.message}</p>
                                </Alert>)
                                }
-                                <h5>New User?  <a style={{textDecoration: "none", color: "sky"}} href="http://localhost:5173/register"><b>Sign Up</b></a></h5>
+                                <h5>New User?  <a style={{textDecoration: "none", color: "sky"}} href="https://chat-in-my-way-repo.vercel.app/register"><b>Sign Up</b></a></h5>
                                 
                                
                          </Stack>

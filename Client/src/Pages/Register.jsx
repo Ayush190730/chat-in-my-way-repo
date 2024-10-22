@@ -46,7 +46,7 @@ const Register = () =>{
                                         <p>{registerError?.message}</p>
                                </Alert>) 
                                    }
-                                    <h5>Already a User?  <a style={{textDecoration: "none", color: "sky"}} href="http://localhost:5173/login"><b>Log In</b></a></h5>
+                                    <h5>Already a User?  <a style={{textDecoration: "none", color: "sky"}} href="https://chat-in-my-way-repo.vercel.app/login"><b>Log In</b></a></h5>
                          </Stack>
                     </Col>
                </Row>
