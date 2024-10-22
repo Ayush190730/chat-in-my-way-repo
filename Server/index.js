@@ -17,7 +17,7 @@ const app = express();
 app.use(express.json());
 
 app.use(cors({
-    origin: process.env.CLIENT_URL,
+    origin: 'https://chat-in-my-way-repo.vercel.app',
     methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
     credentials: true, // If you need to send cookies or auth headers
 }));
