@@ -14,7 +14,7 @@ const NavBar = () => {
                                         <Link to="/" className="link-light text-decoration-none" ><img src={app_logo} height={73} width={73}/></Link>
                                         <a href="" style={{color : "white", margin: "17px 11px 0px 27px", fontFamily: "sans-serif", paddingBottom: "20px", fontSize: "20px"}} className="text-decoration-none">Home</a>
                               </h2>
-                              {user && (<span style={{ marginRight: "80px" ,fontWeight: "bold", color: "#FFD700", fontFamily: "Nunito", fontSize: "25px"}} >{user?.name}</span>)}
+                              {user && (<span style={{ marginRight: "80px" ,fontWeight: "bold", color: "#FF8C00", fontFamily: "Nunito", fontSize: "25px"}} >{user?.name}</span>)}
                               <Nav>
                                       
                                         <Stack direction="horizontal" gap={4}>
